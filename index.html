@@ -28,10 +28,18 @@
                     <img src="assets/images/logo.png" alt="Allibiya Gases Logo" class="h-12">
                 </a>
 
-                <!-- Desktop & Mobile Navigation Toggle -->
-                <div class="flex items-center">
-                    <!-- Search and Actions -->
-                    <div class="hidden md:flex items-center space-x-4 mr-4">
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600 transition">About Us</a>
+                    <a href="products.html" class="text-gray-800 hover:text-blue-600 transition">Products & Services</a>
+                    <a href="industries.html" class="text-gray-800 hover:text-blue-600 transition">Industries</a>
+                    <a href="news.html" class="text-gray-800 hover:text-blue-600 transition">News</a>
+                    <a href="careers.html" class="text-gray-800 hover:text-blue-600 transition">Careers</a>
+                    <a href="sustainability.html" class="text-gray-800 hover:text-blue-600 transition">Sustainability</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600 transition">Contact</a>
+                    <div class="flex items-center space-x-4">
+                        <!-- Search Bar -->
                         <div class="relative">
                             <input type="text" id="search-input" class="w-64 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500" placeholder="Search...">
                             <div id="search-results" class="absolute top-full left-0 w-full mt-2 bg-white rounded-lg shadow-lg hidden">
@@ -47,17 +55,18 @@
                             Get a Quote
                         </button>
                     </div>
-
-                    <!-- Menu Button (Visible on all screens) -->
-                    <button class="text-gray-800 focus:outline-none" id="mobile-menu-button" aria-label="Toggle mobile menu">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-800" id="mobile-menu-button" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
 
-            <!-- Mobile & Desktop Navigation Menu -->
+            <!-- Mobile Navigation -->
             <div class="md:hidden hidden" id="mobile-menu">
                 <div class="flex flex-col space-y-4 py-4">
+                    <!-- Mobile Search -->
                     <div class="relative px-4">
                         <input type="text" id="mobile-search-input" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500" placeholder="Search...">
                         <div id="mobile-search-results" class="absolute top-full left-0 w-full mt-2 bg-white rounded-lg shadow-lg hidden">
@@ -68,6 +77,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <a href="index.html" class="px-4 text-gray-800 hover:text-blue-600 transition">Home</a>
                     <a href="about.html" class="px-4 text-gray-800 hover:text-blue-600 transition">About Us</a>
                     <a href="products.html" class="px-4 text-gray-800 hover:text-blue-600 transition">Products & Services</a>
@@ -80,20 +90,6 @@
                     <a href="contact.html#quote" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition text-center">
                         Get a Quote
                     </a>
-                </div>
-            </div>
-
-            <!-- Desktop Navigation (Hidden by default, shown when menu toggled) -->
-            <div class="hidden md:hidden" id="desktop-menu">
-                <div class="flex flex-col md:flex-row md:items-center md:space-x-8 py-4 md:py-0">
-                    <a href="index.html" class="px-4 text-gray-800 hover:text-blue-600 transition">Home</a>
-                    <a href="about.html" class="px-4 text-gray-800 hover:text-blue-600 transition">About Us</a>
-                    <a href="products.html" class="px-4 text-gray-800 hover:text-blue-600 transition">Products & Services</a>
-                    <a href="industries.html" class="px-4 text-gray-800 hover:text-blue-600 transition">Industries</a>
-                    <a href="news.html" class="px-4 text-gray-800 hover:text-blue-600 transition">News</a>
-                    <a href="careers.html" class="px-4 text-gray-800 hover:text-blue-600 transition">Careers</a>
-                    <a href="sustainability.html" class="px-4 text-gray-800 hover:text-blue-600 transition">Sustainability</a>
-                    <a href="contact.html" class="px-4 text-gray-800 hover:text-blue-600 transition">Contact</a>
                 </div>
             </div>
         </nav>
@@ -284,7 +280,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>© 2024 Allibiya Gases. All rights reserved.</p>
+                <p>&copy; 2024 Allibiya Gases. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -293,13 +289,6 @@
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
     <script src="search.js"></script>
-    <script>
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const desktopMenu = document.getElementById('desktop-menu');
-            mobileMenu.classList.toggle('hidden');
-            desktopMenu.classList.toggle('hidden');
-        });
-    </script>
 </body>
-</html>
+</html> 
+
